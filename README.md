@@ -28,7 +28,7 @@ The PMI-Masking lists included in this repo are named after the corpus over whic
 * "owt-wiki-bc" = OpenWebText + Wikipedia + BookCorpus.  
 
 The results attained after training for 1M steps and evaluating as detailed in the [paper](https://openreview.net/forum?id=3Aoft6NWFej) are:
-| Left-aligned | Center-aligned | Right-aligned |
-| :---         |     :---:      |          ---: |
+|              | SQuAD2.0 F1 | RACE |
+| :---         |     :---:      |          :---: |
 | git status   | git status     | git status    |
 | git diff     | git diff       | git diff      |

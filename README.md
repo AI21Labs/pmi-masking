@@ -28,7 +28,7 @@ The PMI-Masking lists included in this repo are named after the corpus over whic
 * "owt-wiki-bc" = OpenWebText + Wikipedia + BookCorpus.  
 
 The results attained after training for 1M steps on the respective training corpora and evaluating as detailed in the [paper](https://openreview.net/forum?id=3Aoft6NWFej) are:
-|              | SQuAD2.0 F1 | RACE |
+|              | SQuAD2.0 (F1) | RACE |
 | :---         |     :---:      |          :---: |
 | wiki-bc      |   81.7	| 69.3   |
 | owt-wiki-bc  |      82.5	 |  71.2    |

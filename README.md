@@ -1,5 +1,5 @@
 # pmi-masking
-This repository includes the list of masked spans (the masking vocabulary) in the [ICLR 2021 spotlight](https://iclr.cc/virtual/2021/spotlight/3496) PMI-Masking paper, overviewed in this [blogpost](https://www.ai21.com/pmi-masking).
+This repository includes the list of masked spans (the masking vocabulary) in the [ICLR 2021 spotlight](https://iclr.cc/virtual/2021/spotlight/3496) PMI-Masking paper, overviewed in this [blogpost](https://www.ai21.com/blog/pmi-masking).
 
 Section 1 below provides the list construction details. Given the provided list, section 2 details the PMI-Masking method for bidirectional masked language models, which essentially treats all of the elements of the provided lists as units that are only masked jointly together. 
 

@@ -21,7 +21,10 @@ This is in fact a modification of the original PMI_n score in equation 3 of the 
 
 The composed masking vocabulary is added to this repository. Given such a vocabulary, we treat its entries as units to be masked together. All input tokens not identified with entries from the masking vocabulary are treated independently as units for masking according to the Whole-Word Masking scheme of [Devlin et al](https://github.com/google-research/bert). If one masking vocabulary entry contains another entry in a given input, we treat the larger one as the unit for masking, e.g., if the masking vocabulary contains the n-grams “the united states”, “air force”, and “the united states airforce”, the latter will be one unit for masking when it appears. In the case of overlapping entries, we choose one at random as a unit for masking and treat the remaining tokens as independent units, e.g., if the input text contains “by the way out” and the masking vocabulary contains the n-grams“by the way” and “the way out”, we can choose either “by the way” and “out” or “by” and “the way out” as units for masking. After we segment the sequence of input tokens into units for masking, we then choose tokens for masking by sampling units uniformly at random until 15% of the tokens (the standard tokens of the 30K-token vocabulary) in the input are selected. As in the prior methods, replacement with [MASK](80%), random (10%), or original (10%) tokens is done at the unit level.
 
-"exp" in list names marks lists composed with this approach. The corpus is marked by "wiki-bc" = Wikipedia+BookCorpus or "owt-wiki-bc" = OpenWebText+Wikipedia+BookCorpus.  
-The results attained after training for 1M steps and evaluating as we detail in paper are:
-SQuAD (F1)RACEpmi_800K_exp_wiki-bc81.769.3pmi_800K_exp_owt-wiki-bc82.571.2
- (
+## Section 3: Results for the included lists
+
+The PMI-Masking lists included in this repo are named after the corpus over which they were constructed:
+* "wiki-bc" = Wikipedia + BookCorpus
+* "owt-wiki-bc" = OpenWebText + Wikipedia + BookCorpus.  
+
+The results attained after training for 1M steps and evaluating as detailed in the [paper](https://openreview.net/forum?id=3Aoft6NWFej) are:

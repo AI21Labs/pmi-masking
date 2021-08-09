@@ -2,7 +2,7 @@
 This repository includes the list of masked spans (the masking vocabulary) that is used in the [ICLR 2021 spotlight](https://iclr.cc/virtual/2021/spotlight/3496) PMI-Masking paper, overviewed in this [blogpost](https://www.ai21.com/blog/pmi-masking). Below,
 
 * Section 1 provides the list construction details. 
-* Section 2 details the PMI-Masking method for bidirectional masked language models, which essentially treats all of the elements of the provided lists as units that can only be masked together. 
+* Section 2 details the PMI-Masking method for bidirectional masked language models, which essentially treats all of the spans in the provided lists as units for masking. 
 * Section 3 provides some scores of recently trained models on the [SQuAD2.0](https://rajpurkar.github.io/SQuAD-explorer/) and [RACE](https://www.cs.cmu.edu/~glai1/data/race/) benchmarks.
 
 ## Section 1: How we constructed the masking vocabulary

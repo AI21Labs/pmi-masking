@@ -15,7 +15,7 @@ The PMI-Masking lists included in this repo are attained by using the following 
 
 
 
-This is in fact a modification of the original PMI_n score in equation 3 of the paper (that led to slight improvements) -- it multiplies in the frequency of the n-gram: p(w_1\ldots w_n). Intuitively, our method makes even more impact when more frequent n-grams are favored, since the signal introduced by the method is more prevalent.  
+This is in fact a modification of the original PMI_n score in equation 3 of the [paper](https://openreview.net/forum?id=3Aoft6NWFej) (that led to slight improvements) -- it multiplies in the frequency of the n-gram: p(w_1\ldots w_n). Intuitively, our method makes even more impact when more frequent n-grams are favored, since the signal introduced by the method is more prevalent.  
 
 ## Section 2: How to implement PMI masking given a masking vocabulary
 
